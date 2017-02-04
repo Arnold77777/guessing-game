@@ -5,7 +5,7 @@ class GuessingGame {
 
     setRange(min, max) {
     	this.min = min;
-    	while (min <= max) { 
+    	while (min <= max) {
     		this.arr[min] = min; 
     		min++;
     	}
@@ -14,8 +14,8 @@ class GuessingGame {
 
     guess() {
     	this.middle = Math.ceil ((this.min + this.max) / 2.0);
-	    return this.arr[this.middle];
-	}
+	return this.arr[this.middle];
+    }
 
     lower() {
     	return this.max = this.middle;
